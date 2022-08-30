@@ -4,18 +4,18 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class Seller implements Serializable{
-	
+public class Seller implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String name, email;
 	private Date birthDate;
 	private Double baseSalary;
-	
+
 	private Department department;
-	
+
 	public Seller() {
-		
+
 	}
 
 	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
@@ -98,5 +98,5 @@ public class Seller implements Serializable{
 	public String toString() {
 		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
 				+ baseSalary + ", department=" + department + "]";
-	}	
+	}
 }
